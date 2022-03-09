@@ -17,3 +17,16 @@ var image2 = document.querySelectorAll("img")[1];
 // changing the dice images
 image1.setAttribute("src", randomImageSource1);
 image2.setAttribute("src", randomImageSource2);
+
+// simple logic of comparison
+var title = document.querySelector("h1");
+
+if (randomNumber1 > randomNumber2) {
+  title.innerText = "🚩player 1 wins!"
+}
+else if (randomNumber1 < randomNumber2) {
+  title.innerText = "player 2 wins🚩!"
+}
+else {
+  title.innerText = "Draw!"
+}
